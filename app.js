@@ -46,7 +46,7 @@ mongoose.connect(
 
 
 app.get('/',(req,res)=>{
-    res.sendFile(path.join(__dirname,'./public','index.html'))
+    res.sendFile(path.join(__dirname,'./public','https://app-git-master.medicoconsultation.vercel.app/index.html'))
     
 })
 
@@ -106,7 +106,7 @@ app.post('/patient-register',(req,res)=>{
                   .then(result=>{
                       console.log(result);
                       
-                      res.sendFile(path.join(__dirname,'./public','patient-dashboard.html'))
+                      res.sendFile(path.join(__dirname,'./public','https://app-git-master.medicoconsultation.vercel.app/patient-dashboard.html'))
                       
                     
                   })
@@ -186,7 +186,7 @@ else {
               .then(result=>{
                   console.log(result);
                   
-                  res.sendFile(path.join(__dirname,'./public','doctor-dashboard.html'))
+                  res.sendFile(path.join(__dirname,'./public','https://app-git-master.medicoconsultation.vercel.app/doctor-dashboard.html'))
                   
                 
               })
@@ -236,7 +236,7 @@ app.post('/patient-login',(req,res)=>{
                 if(result){
 
                  
-                    res.sendFile(path.join(__dirname,'./public','patient-dashboard.html'))
+                    res.sendFile(path.join(__dirname,'./public','https://app-git-master.medicoconsultation.vercel.app/patient-dashboard.html'))
                 }
                 else{
                     res.render('error.ejs', {
@@ -282,7 +282,7 @@ app.post('/doctor-login',(req,res)=>{
                 if(result){
 
                  
-                    res.sendFile(path.join(__dirname,'./public','doctor-dashboard.html'))
+                    res.sendFile(path.join(__dirname,'./public','https://app-git-master.medicoconsultation.vercel.app/doctor-dashboard.html'))
                 }
                 else{
                     res.render('error.ejs', {
@@ -385,7 +385,7 @@ console.log(req.body.medname,req.body.time,req.body.startdate,req.body.enddate)
     //   return console.log(`Sorry I'm busy...`)
     }
   )
-res.sendFile(path.join(__dirname,'./public','patient-dashboard.html'))
+res.sendFile(path.join(__dirname,'./public','https://app-git-master.medicoconsultation.vercel.app/patient-dashboard.html'))
 
 })
 
